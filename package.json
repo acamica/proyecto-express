@@ -1,0 +1,19 @@
+{
+  "name": "Proyecto curso express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.13.3",
+    "express": "^4.13.3",
+    "express-handlebars": "^2.0.1",
+    "express-session": "^1.11.3",
+    "lodash": "^3.10.1",
+    "uuid": "^2.0.1"
+  }
+}

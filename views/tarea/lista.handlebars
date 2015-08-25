@@ -1,0 +1,26 @@
+<div class="task-list mdl-card mdl-shadow--2dp">
+    <form action="/crear" method="post">
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" type="text" id="titulo" name="titulo" />
+            <label class="mdl-textfield__label" for="titulo">Qué quieres hacer hoy...</label>
+        </div>
+    </form>
+    {{#each tareas}}
+    <div class="task-item">
+        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect mdl-card__supporting-text " for="{{id}}">
+            <input type="checkbox" id="{{id}}" class="mdl-checkbox__input" {{#if completada}}checked{{/if}} />
+            <span class="mdl-checkbox__label">{{titulo}}</span>
+        </label>
+    </div>
+    {{/each}}
+    <div class="mdl-card__actions mdl-grid">
+        <div class="mdl-cell mdl-cell--5-col">
+            <span class="pending-task-count">{{ pendientes }}</span> tareas pendientes
+        </div>
+        <div class="mdl-cell mdl-cell--7-col">
+            <span class="task-filter {{#ifview "todas"}}active{{/ifview}}"><a href="/">Todas</a></span>
+            <span class="task-filter {{#ifview "pendientes"}}active{{/ifview}}"><a href="/pendientes">Pendientes</a></span>
+            <span class="task-filter {{#ifview "completas"}}active{{/ifview}}"><a href="/completas">Completas</a></span>
+        </div>
+    </div>
+</div>
