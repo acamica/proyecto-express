@@ -45,7 +45,9 @@ app.use(function(err, req, res, next) {
     res.status(500).render('error');
 });
 
+app.set('port', (process.env.PORT || 8000));
+
 // Escucho en el puerto indicado
-app.listen(8000, function () {
-    console.log('Escuchando en el puerto 8000');
+app.listen(app.get('port'), function () {
+    console.log('Escuchando en el puerto %d', app.get('port'));
 });
