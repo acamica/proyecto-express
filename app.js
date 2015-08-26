@@ -45,6 +45,8 @@ app.use(function(err, req, res, next) {
     res.status(500).render('error');
 });
 
+// Defino el puerto en el que escucha el servidor. Puede venir por
+// variables de entorno (por heroku) o usar el 8000
 app.set('port', (process.env.PORT || 8000));
 
 // Escucho en el puerto indicado
