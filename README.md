@@ -4,10 +4,10 @@ Proyecto Express Acamica
 Bienvenido a este proyecto de Acamica! Si quieres ver las instrucciones completas las puedes encontrar [aquí](https://www.acamica.com/clases/1886/express/proyecto-final).
 
 
-Correr el ejemplo
+Cómo correr el ejemplo
 -----------------
 
-Crear un fork del proyecto desde github y luego clona el repositorio en un directorio local
+Crea un fork del proyecto desde github y luego clona el repositorio en un directorio local
 
 ```
 git clone <url-del-clone>
@@ -24,7 +24,7 @@ Ejecuta el servidor
 node app.js
 ```
 
-O si estas desarrollando y quieres que se actualice en forma continua, instala nodemon y corre
+O si estas desarrollando y quieres que se actualice en forma continua, instala `nodemon` y corre
 
 ```
 nodemon app.js
