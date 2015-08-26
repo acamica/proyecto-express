@@ -34,8 +34,8 @@ Cualquier duda consulta en la comunidad de Acamica.
 
 ¡Buena suerte!
 
-Detalles de la implementación
------------------------------
+Librerías utilizadas
+--------------------
 
 ### Material Design Lite
 Porque la estética importa, decidimos hacer el proyecto usando Material Design. Google provee una librería que
